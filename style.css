@@ -1,0 +1,1123 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+a{
+    color: aliceblue;
+}
+
+/* navigation styling */
+.wrapper{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.wrapper img{
+    width: 14%;
+    padding:20px ;
+}
+.minidiv ul{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    padding: 20px;
+}
+.minidiv{
+    width: 50%;
+}
+.minidiv ul li a{
+    color: aliceblue;
+}
+.minidiv ul li{
+    font-size: 20px;
+}
+.minidiv button{
+    width: 125px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: rgb(26, 161, 202);
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.hamburger div{
+    height: 3px;
+    width: 25px;
+    background-color: rgb(255, 253, 253);
+    margin: 3px;
+    position: relative;
+    top: 10px;
+    left: -10px;
+}
+
+.close img{
+
+width: 40%;
+padding-right: 2px;
+padding-top: 10px;
+}
+
+/*  */
+
+.over-c{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.avatar {
+    width: 100px !important;
+    height: 100px !important;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+    margin-top: -20px;
+  }
+  
+  .carousel h4 {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    
+  }
+  .quote {
+    height: 30px !important;
+    width: 30px !important;
+  }
+  .owl-carousel .owl-item img {
+    display: inline !important;
+  }
+  .owl-dot {
+    width: 55px;
+    height: 10px;
+    background-color: rgb(0, 0, 0) !important;
+    margin-right: 10px;
+    border-radius: 30px;
+    transition: 0.5s ease;
+  }
+  .owl-dots {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  .owl-dot:hover,
+  .owl-dot.active {
+    background-color: rgb(136, 136, 118) !important;
+  }
+  
+  .cards {
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 50px;
+  }
+  .cards1 {
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 50px;
+  }
+
+@keyframes glowing{
+    0% {
+        background-color: rgb(21, 255, 255);
+        box-shadow: 0 0 3px rgb(0, 0, 0);
+    }
+    50% {
+        background-color: rgb(21, 255, 255);
+        box-shadow:0 0 3px rgb(0, 0, 0);
+    }
+    100% {
+        background-color:rgb(21, 255, 255) ;
+        box-shadow: 0 0 3px rgb(0, 0, 0);
+    }
+}
+
+
+  @keyframes floating {
+    0% {
+      transform: translate(0, 0px);
+    }
+    50% {
+      transform: translate(0, 15px);
+    }
+    100% {
+      transform: translate(0, -0px);
+    }
+  } 
+@media(max-width:765px){
+    .wrapper img{
+        width: 30%;
+        z-index: 10;
+    }
+    .minidiv{
+        position: absolute;
+        background-color: rgb(34, 29, 29);
+        top: 70px;
+        width: 100%;
+        transform: translateX(-768px);
+        transition: 0.3s ease-in-out;
+    }
+
+    .minidiv ul{
+        flex-direction: column;
+        line-height: 50px;
+    }
+    .minidiv ul li{
+        border-bottom: 3px solid;
+    }
+    .minidiv button{
+        margin-top: 20px;
+        padding: 4px;
+    }
+    .close{
+        display: none;
+    }
+    /* body part 1 */
+    .a-text{
+       background: url(images/avarar\ back.jpg);
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       height: 60vh;
+      
+    }
+.a-text img{
+ display: none;
+    width: 100%;
+
+
+}
+ .a-text h1{
+    font-size: 25px;
+   
+    padding-top: 60px;
+    padding-left: 20px;
+    line-height: 29px;
+    padding-bottom: 20px;
+    color: rgb(255, 255, 255);
+}
+ .a-text  p{
+    padding-left: 20px;
+    width: 70%;
+    line-height: 29px;
+    font-size: 20px;
+    color: aliceblue;
+}
+.a-text span{
+    color: orange;
+}
+
+.a-text button{
+    margin-left: 20px;
+    width: 170px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: orange;
+    border: none;
+    cursor: pointer;
+    color: aliceblue;
+    border-radius:30px ;
+    animation: glowing 1300ms infinite;
+} 
+.archive button{
+    width: 120px;
+    height: 30px;
+    background-color: aliceblue;
+    color: aqua;
+    border: none;
+    border: 1px solid aqua;
+ margin-left: 20px;
+ margin-bottom: 20px;
+ animation: glowing 1300ms infinite;
+} 
+
+/* body part 3 */
+.b-text{
+    background-color: rgba(194, 194, 194,0.5);
+    justify-content: center;
+   
+    padding-bottom: 20px;
+}
+.b-text h3{
+    text-align: center;
+    font-size: 30px;
+    padding-top:30px ;
+    padding-bottom: 20px;
+}
+.b-text p{
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+}
+.b-text button{
+   
+    width: 200px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(26, 161, 202);
+    margin-left: 80px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    animation: glowing 1300ms infinite;
+  
+
+}
+.b-text button:hover{
+    background-color: black;
+    color: aliceblue;
+    transition: 0.3s ease-in-out;
+}
+.b-text img{
+    width: 90%;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    
+}
+.c-text{
+    background-color: rgb(187, 241, 241);
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.c-text h3{
+    text-align: center;
+    font-size: 30px;
+    padding-top:30px ;
+    padding-bottom: 20px;
+}
+.c-text p{
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+}
+.c-text button{
+   
+    width: 200px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(26, 161, 202);
+    margin-left: 80px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    animation: glowing 1300ms infinite;
+  
+
+}
+.c-text button:hover{
+    background-color: black;
+    color: aliceblue;
+    transition: 0.3s ease-in-out;
+}
+.c-text img{
+    width: 90%;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    animation-name: floating;
+animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    
+}
+
+/* body part 4 */
+.d-text {
+    background-color: gray;
+    padding-bottom: 20px;
+}
+.d-text h3{
+    text-align: center;
+    color: aliceblue;
+    padding-top: 30px;
+}
+.d1-text{
+    background-color: aliceblue;
+    max-width: 300px;
+    padding: 10px;
+  margin-left: 50px;
+  margin-right: 20px;
+    margin-top: 0px;
+    margin-bottom:20px ;
+}
+.d1-text span{
+    font-size: 16px;
+    font-weight: 800;
+}
+.d-text h3{
+    font-size: 20px;
+    color: aliceblue;
+    text-align: center;
+padding-bottom: 20px;
+    padding-top: 30px;
+}
+.d-text ul{
+    position: relative;
+    left: 45px;
+    bottom: 40px;
+    }
+
+    /* body part 5 */
+    .e-text{
+        background-color: rgba(194, 194, 194,0.3);
+    }
+    .e-text h1{
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 27px;
+    }
+    
+    .e-text p{
+        text-align: center;
+        line-height: 23px;
+        font-size: 19px;
+    }
+    .e-text img{
+        width: 40%;
+        margin-left: 20px;
+        animation-name: floating;
+animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    }
+    .e-text button{
+        width: 200px;
+        height: 30px;
+        background-color:rgb(26, 161, 202);
+        border: none;
+        cursor: pointer;
+        margin-left: 80px;
+        margin-bottom: 20px;
+        margin-top: 50px;
+        animation: glowing 1300ms infinite;
+    }
+    .e-text button:hover{
+        background-color: black;
+        color: aliceblue;
+        transition: 0.3s ease-in-out;
+    }
+    .cards1{
+        max-width: 300px;
+        margin-left: 40px;
+    }
+    .cards1 h3{
+        color: aqua;
+        padding-top: 50px;
+    }
+    /* body part 6 */
+    .f-text{
+        background-color: rgba(194, 194, 194,0.5);
+        justify-content: center;
+       
+        padding-bottom: 20px;
+    }
+    .f-text h1{
+        text-align: center;
+        font-size: 30px;
+        padding-top:30px ;
+        padding-bottom: 20px;
+    }
+    .f-text p{
+        text-align: center;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .f1-text{
+        display: none;
+    }
+    form input{
+        width: 215px;
+margin-left: 90px;
+margin-top: 20px;
+        padding: 8px;
+        background-color: aliceblue;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        
+    }
+    form button{
+        width: 225px;
+        margin-left: 100px;
+        height: 35px;
+        border-radius: 30px;
+        background-color: rgb(29, 78, 124);
+        color: rgb(2, 2, 2);
+        animation: glowing 1300ms infinite;
+      
+    }
+    /* footer */
+    footer a{
+        color: rgb(148, 148, 148);
+    }
+    footer h3{
+        color: grey;
+        padding-top: 60px;
+        padding-left: 20px;
+    }
+    footer ul{
+        padding-left: 20px;
+        padding-top: 20px;
+        line-height: 15px;
+    }
+    .g1-text ul{
+        display: flex;
+        width: 70%;
+    }
+}
+@media(min-width:765px){
+    .close{
+        display: none;
+    }
+    .hamburger {
+        display: none;
+    }
+    .minidiv ul li{
+        font-size: 16px;
+    }
+    .minidiv ul{
+        width: 80%;
+    }
+    .minidiv{
+        width: 70%;
+    }
+    /* body part 1 */
+    .a-text{
+        background-color: rgb(37, 33, 33);
+        padding-bottom: 58px;
+    }
+.a-text img{
+   float: right;
+    width: 50%;
+
+
+}
+.a-text h1{
+    font-size: 25px;
+    padding-top: 70px;
+    padding-left: 20px;
+    line-height: 35px;
+    padding-bottom: 20px;
+    color: aliceblue;
+}
+.a-text  p{
+    padding-left: 20px;
+    width: 45%;
+    line-height: 25px;
+    font-size: 17px;
+    color: aliceblue;
+}
+.a-text span{
+    color: orange;
+}
+
+.a-text button{
+    margin-left: 20px;
+    width: 170px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: orange;
+    border: none;
+    cursor: pointer;
+    color: aliceblue;
+    animation: glowing 1300ms infinite;
+}
+.archive button{
+    width: 160px;
+    height: 40px;
+    background-color: transparent;
+    color: rgb(33, 106, 214);
+    border: none;
+    border: 1px solid aqua;
+ margin-left: 20px;
+ margin-bottom: 20px;
+ /* animation: glowing 1300ms infinite; */
+}
+/* body part 3 */
+.b-text{
+    background-color: rgba(194, 194, 194,0.3);
+    justify-content: center;
+}
+.b-text h3{
+    text-align: center;
+    font-size: 30px;
+    padding-top:30px ;
+    padding-bottom: 20px;
+}
+.b-text p{
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+}
+.b-text button{
+   
+    width: 200px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(26, 161, 202); 
+    margin-left: 330px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    animation: glowing 1300ms infinite;
+  
+
+}
+.b-text button:hover{
+    background-color: black;
+    color: aliceblue;
+    transition: 0.3s ease-in-out;
+}
+.b-text img{
+    width: 60%;
+    margin-left: 200px;
+}
+.c-text{
+    background-color: rgb(187, 241, 241);
+    padding-bottom: 130px;
+    
+}
+.c-text h3{
+  
+    font-size: 29px;
+    padding-top:140px ;
+    width: 40%;
+    padding-left: 70px;
+    padding-bottom: 20px;
+}
+.c-text p{
+  width: 40%;
+  padding-left: 70px;
+    font-size: 18px;
+    line-height: 30px;
+}
+.c-text button{
+   
+    width: 200px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(26, 161, 202);
+    margin-left: 70px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    animation: glowing 1300ms infinite;
+
+}
+.c-text button:hover{
+    background-color: black;
+    color: aliceblue;
+    transition: 0.3s ease-in-out;
+}
+.c-text img{
+    width: 40%;
+    float: right;
+    position: relative;
+bottom: 260px;
+left: -100px;
+animation-name: floating;
+animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+/* body part 4 */
+.d-text {
+    background-color: gray;
+    height: 400px;
+}
+.d-text h3{
+    text-align: center;
+}
+/* body part 4 */
+
+.over{
+    overflow: hidden;
+    position: relative;
+    bottom: 90px;
+display: inline-flex;
+}
+
+.d1-text{
+    background-color: aliceblue;
+    max-width: 300px;
+    padding: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+    margin-top: 0px;
+    margin-bottom:20px ;
+}
+.d1-text span{
+    font-size: 16px;
+    font-weight: 800;
+}
+.d-text h3{
+    font-size: 20px;
+    color: aliceblue;
+    text-align: center;
+    padding-left: 200px;
+    padding-top: 30px;
+}
+.d-text ul{
+position: relative;
+left: 45px;
+bottom: 40px;
+}
+.d-text p{
+line-height: 23px;
+}
+/* body part 5 */
+.e-text{
+    background-color: rgba(194, 194, 194,0.3);
+}
+.e-text h1{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 27px;
+}
+
+.e-text p{
+    text-align: center;
+    line-height: 23px;
+    font-size: 19px;
+}
+.e-text img{
+    width: 20%;
+    margin: 10px;
+    position: relative;
+    bottom: 40px;
+    left: 50px;
+    animation-name: floating;
+animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.e-text button{
+    width: 200px;
+    height: 30px;
+    background-color:rgb(26, 161, 202);
+    border: none;
+    cursor: pointer;
+    margin-left: 300px;
+    animation: glowing 1300ms infinite;
+    margin-bottom: 20px;
+}
+.e-text button:hover{
+    background-color: black;
+    color: aliceblue;
+    transition: 0.3s ease-in-out;
+}
+.cards1{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.cards1 h3{
+    color: aqua;
+    padding-top: 50px;
+}
+/* body part 6 */
+.f-text{
+    background-color: rgba(194, 194, 194,0.3);
+    justify-content: left;
+    padding-bottom: 30px;
+    padding-left: 30px;
+}
+.f-text h1{
+   justify-content: left;
+    font-size: 30px;
+    padding-top:30px ;
+    padding-bottom: 20px;
+}
+.f-text p{
+  justify-content: left;
+    font-size: 20px;
+    line-height: 30px;
+}
+form input{
+    width: 195px;
+    padding: 5px;
+    background-color: aliceblue;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    
+}
+form button{
+    width: 195px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: rgb(21, 116, 204);
+    color: aliceblue;
+    position: relative;
+    top: 40px;
+    left: -210px;
+    animation: glowing 1300ms infinite;
+}
+
+.f1-text img{
+    width: 40%;
+    position: relative;
+    left: 420px;
+    top: -280px;
+}
+/* footer */
+footer a{
+    color: rgb(148, 148, 148);
+}
+footer h3{
+    color: grey;
+    padding-top: 60px;
+    padding-left: 40px;
+}
+footer ul{
+    padding-left: 40px;
+    padding-top: 20px;
+    line-height: 20px;
+}
+footer{
+    background-color:rgba(155, 139, 139, 0.3);
+    position: relative;
+    top: -210px;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 40px;
+}
+.g1-text ul{
+    display: flex;
+    width: 70%;
+}
+}
+
+@media(min-width:1064px){
+    .close{
+        display: none;
+    }
+    .hamburger {
+        display: none;
+    }
+    .minidiv ul li{
+        font-size: 20px;
+    }
+    /* body styling 1 */
+    .a-text{
+        background-color: rgb(37, 33, 33);
+        padding-bottom: 148px;
+    }
+.a-text img{
+   float: right;
+    width: 50%;
+
+
+}
+.a-text h1{
+    font-size: 30px;
+    padding-top: 130px;
+    padding-left: 20px;
+    line-height: 35px;
+    padding-bottom: 20px;
+    color: aliceblue;
+}
+.a-text  p{
+    padding-left: 20px;
+    width: 45%;
+    line-height: 25px;
+    font-size: 20px;
+    color: aliceblue;
+}
+.a-text span{
+    color: orange;
+}
+
+.a-text button{
+    margin-left: 20px;
+    width: 170px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: orange;
+    border: none;
+    cursor: pointer;
+    color: aliceblue;
+}
+/* body part 2 */
+.cards{
+    max-width: 500px;
+}
+.cards p{
+    font-size: 19px;
+    
+}
+.cards img{
+    width: 90% !important;
+}
+.archive button{
+    width: 160px;
+    height: 40px;
+    background-color: transparent;
+    color: aqua;
+    border: none;
+    border: 3px solid aqua;
+ margin-left: 20px;
+ margin-bottom: 20px;
+}
+/* body part 3 */
+.b-text{
+    background-color: rgba(150, 135, 135, 0.3);
+    justify-content: center;
+  
+}
+.b-text h3{
+    text-align: center;
+    font-size: 30px;
+    padding-top:30px ;
+    padding-bottom: 20px;
+}
+.b-text p{
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+}
+.b-text button{
+   
+    width: 200px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(26, 161, 202);
+    margin-left: 560px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  
+
+}
+ .b-text button:hover{
+    background-color: black;
+    color: aliceblue;
+    transition: 0.3s ease-in-out;
+} 
+.b-text img{
+    width: 60%;
+    margin-left: 300px;
+    margin-bottom: 20px;
+}
+.c-text{
+    background-color: rgb(187, 241, 241);
+    padding-bottom: 130px;
+    
+}
+.c-text h3{
+  
+    font-size: 32px;
+    padding-top:140px ;
+    width: 25%;
+    padding-left: 130px;
+    padding-bottom: 20px;
+}
+.c-text p{
+  width: 27%;
+  padding-left: 130px;
+    font-size: 23px;
+    line-height: 30px;
+}
+.c-text button{
+   
+    width: 200px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(26, 161, 202);
+    margin-left: 130px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  
+
+}
+.c-text button:hover{
+    background-color: black;
+    color: aliceblue;
+    transition: 0.3s ease-in-out;
+}
+.c-text img{
+    width: 27%;
+    float: right;
+    position: relative;
+bottom: 300px;
+left: -140px;
+animation-name: floating;
+animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+
+/* body part 4 */
+.d-text{
+    background-color: grey;
+
+}
+.over{
+    display: flex;
+    justify-content: space-around;
+bottom: -20px;
+left: 70px;
+}
+
+.d1-text{
+    background-color: aliceblue;
+    max-width: 500px;
+    padding: 10px;
+   
+    
+  margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom:20px ;
+}
+.d1-text span{
+    font-size: 16px;
+    font-weight: 800;
+}
+.d-text h3{
+    font-size: 27px;
+    color: aliceblue;
+    text-align: center;
+    padding-left: 200px;
+    padding-top: 30px;
+}
+.d-text ul{
+position: relative;
+left: 45px;
+bottom: 40px;
+}
+.d-text p{
+line-height: 23px;
+}
+/* body part 5 */
+.e-text{
+    background-color: rgba(194, 194, 194,0.3);
+}
+.e-text h1{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 27px;
+}
+
+.e-text p{
+    text-align: center;
+    line-height: 23px;
+    font-size: 19px;
+}
+.e-text img{
+    width: 20%;
+    margin: 10px;
+    position: relative;
+    bottom: 40px;
+    left: 50px;
+    animation-name: floating;
+animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.e-text button{
+    width: 200px;
+    height: 30px;
+    background-color:rgb(26, 161, 202);
+    border: none;
+    cursor: pointer;
+    margin-left: 500px;
+    margin-bottom: 20px;
+}
+.e-text button:hover{
+    background-color: black;
+    color: aliceblue;
+    transition: 0.3s ease-in-out;
+}
+
+.cards1 h3{
+    color: aqua;
+    padding-top: 50px;
+}
+
+/* body part 6 */
+.f-text{
+    background-color: rgba(150, 135, 135, 0.3);
+    justify-content: left;
+    padding-left: 40px;
+    padding-top: 30px;
+    padding-bottom: 120px;
+    
+  
+}
+.f-text h1{
+   justify-content: right;
+    font-size: 30px;
+    padding-top:30px ;
+    padding-bottom: 20px;
+}
+.f-text p{
+    justify-content: left;
+    font-size: 20px;
+    line-height: 30px;
+}
+form input{
+    width: 195px;
+    padding: 5px;
+    background-color: aliceblue;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    
+}
+form button{
+    width: 195px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: rgb(21, 116, 204);
+    color: aliceblue;
+    position: relative;
+    top: 40px;
+    left: -210px;
+}
+.f1-text img{
+    width: 40%;
+    position: relative;
+    left: 620px;
+    top: -380px;
+}
+/* footer */
+footer a{
+    color: rgb(148, 148, 148);
+}
+footer h3{
+    color: grey;
+    padding-top: 60px;
+    padding-left: 40px;
+}
+footer ul{
+    padding-left: 40px;
+    padding-top: 20px;
+    line-height: 20px;
+}
+footer{
+    background-color:rgba(194, 194, 194,0.3);
+    position: relative;
+    top: -340px;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 40px;
+}
+.g1-text ul{
+    display: flex;
+    width: 70%;
+}
+
+}
