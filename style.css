@@ -227,20 +227,20 @@ padding-top: 10px;
     background-color: orange;
     border: none;
     cursor: pointer;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
     border-radius:30px ;
     animation: glowing 1300ms infinite;
 } 
 .archive button{
     width: 120px;
     height: 30px;
-    background-color: aliceblue;
+    background-color:transparent;
     color: aqua;
     border: none;
     border: 1px solid aqua;
  margin-left: 20px;
  margin-bottom: 20px;
- animation: glowing 1300ms infinite;
+
 } 
 
 /* body part 3 */
